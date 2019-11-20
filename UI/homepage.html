@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <title>home</title>
+</head>
+<body>
+    <header>
+        <h3>broadcaster</h3>
+        <div class="nav">
+            <a>home</a>
+            <a>dashboard</a>
+            <a>red-flags</a>
+            <button  id="login-btn">login</button>    
+        </div>
+    </header>
+    <div class="main">
+        <div class="story">
+            <h1>report corrupt leaders and help solve damaged infrasture <span> with us</span></h1>
+            <p>create an account or login to access our services </p>
+            <button onclick="openSignUp()" id="signup-btn">sign up</button>
+        </div>
+        <div class="pic">
+            <img class="image" src="./assets/undraw_new_ideas_jdea.png">
+
+        </div>
+
+    </div>
+    <div id="loginForm" class="pop-window">
+        <div  class="loginContainer">
+            <div class="header">
+                    <h2 required class="login  modalheader">Login</h2>
+                    <span id="close-btn" onclick="closeModal()">&times;</span>
+
+            </div>
+               
+                <form action="#">
+                       
+                        <input class="login-form" required type="email" placeholder="Email" />
+                        <input class="login-form" required type="password" placeholder="Password" />
+                        <button class="login-btn">Login</button>
+                        <p  class="redir">or <span class="r-span" onclick="openSignUp()" >register!</span></a></p>
+        </div>
+
+</div>
+<div id="signUpForm" class="pop-window">
+        <div  class="signUpContainer">
+            <div class="header">
+                    <h2 required class="signup  modalheader">Sign up</h2>
+                    <span id="close-btn" onclick="closeModal()">&times;</span>
+
+            </div>
+               
+                <form class="sign-up-form">
+                       
+                        <input class="signup-input" required type="text" placeholder="given Name" />
+                        <input class="signup-input" required type="text" placeholder="surname" />
+                        <input class="signup-input" required type="text" placeholder="phone number" />
+                        <input class="signup-input" required type="email" placeholder="Email" />
+                        <input class="signup-input" required type="password" placeholder="Password" />
+                        <!-- <input class="submit-btn" type="button" value="signup" class="submit" onclick=""> -->
+                        <button class="submit-btn" >signup</button>
+                
+                     
+        </div>
+
+</div>
+    <script src="./js/homepage.js"></script>
+</body>
+</html>
